@@ -5,16 +5,14 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 25vmin;
 }
 .Small-logo{
   height: 6vmin;
 }
 .Footer {
-  position:absolute;
-  bottom:0;
   width:100%;
-  height:60px;
+  height:20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,9 +35,10 @@
 .Inside-Column {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 10px;
   align-items: center;
   justify-content: center;
+  background-color: #282c30;
 }
 
 .Short-Forecast-Row{

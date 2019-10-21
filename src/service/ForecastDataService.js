@@ -11,6 +11,14 @@ class ForecastDataService{
     getTomorrowsForecast(){
         return axios.get(`${API_URL}/tmrw`);
     }
+
+    getPlaceNames(){
+        return axios.get(`${API_URL}/names`)
+    }
+
+    getForecastByPlaceName(name){
+        return axios.get(`${API_URL}/places?name=${name}`)
+    }
 }
 
 export default new ForecastDataService();

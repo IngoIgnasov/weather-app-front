@@ -5,7 +5,11 @@ import cloudy from '../assets/cloudy.svg';
 import night from '../assets/night.svg';
 import thunder from '../assets/thunder.svg';
 
+/**
+ *This class is responsible for turning the phenomenon field data we get from the API into corresponding Logos.
+ */
 class WeatherIconService{
+
     getIcon(phenomenon){
         if(phenomenon==="Cloudy"){
             return cloudy;

@@ -18,7 +18,10 @@ const medStyle = {
 };
 
 
-
+/**
+ *In this component we get all of the forecasts from the API with axios, then generate small forecast display boxes
+ * for every forecast in the array.
+ */
 class ShortForecastComponent extends Component {
     //we add list of forecasts to the state of the component
     constructor(props) {
@@ -49,6 +52,7 @@ class ShortForecastComponent extends Component {
             <div className="Short-Forecast-Row">
                 {
                     //iterating over all of the forecasts besides first adding icons,tooltips and other info based on the weather data
+                    //this.state.forecasts.slice(1, this.state.forecasts.length).map(
                     this.state.forecasts.slice(1, this.state.forecasts.length).map(
                         forecast =>
                             <div className="Column">
@@ -63,7 +67,7 @@ class ShortForecastComponent extends Component {
                                             <img src={WeatherIconService.getDayIcon(forecast.days[0].phenomenon)}
                                                  className="Small-logo" alt="logo"/>
                                         </Tooltip>
-                                        <p style={smallStyle}>{forecast.days[0].tempmin}...{forecast.days[0].tempmax}</p>
+                                        <p style={smallStyle}>{forecast.days[0].tempmin}...{forecast.days[0].tempmax}°C</p>
 
                                     </div>
                                     <div className="Inside-Column">
@@ -73,7 +77,7 @@ class ShortForecastComponent extends Component {
                                             <img src={WeatherIconService.getNightIcon(forecast.nights[0].phenomenon)}
                                                  className="Small-logo" alt="logo"/>
                                         </Tooltip>
-                                        <p style={smallStyle}>{forecast.nights[0].tempmin}...{forecast.nights[0].tempmax}</p>
+                                        <p style={smallStyle}>{forecast.nights[0].tempmin}...{forecast.nights[0].tempmax}°C</p>
 
                                     </div>
                                 </div>
