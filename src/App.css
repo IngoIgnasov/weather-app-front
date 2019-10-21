@@ -1,3 +1,5 @@
+@import url(https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css);
+
 .App {
   text-align: center;
 }
@@ -5,7 +7,47 @@
 .App-logo {
   height: 40vmin;
 }
+.Small-logo{
+  height: 6vmin;
+}
+.Footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+.Row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Column {
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Inside-Column {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Short-Forecast-Row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
